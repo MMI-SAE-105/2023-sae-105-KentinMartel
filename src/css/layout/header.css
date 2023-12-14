@@ -1,0 +1,27 @@
+header {
+    background-color: var(--gray);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.logo-header {
+    width: 60px;
+    padding-left: 10px;
+}
+
+.header__title {
+    width: 43px;
+    padding-right: 15px;
+
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
