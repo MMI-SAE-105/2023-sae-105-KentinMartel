@@ -10,95 +10,99 @@
 
     <script src="//unpkg.com/alpinejs" defer></script>
 </head>
-<div class="color"></div>
+<div class="color">
 
-<body>
-    <div class="header">
-        <header class="active">
-            <a href="index.html"> <img class="logo-header" src="/src/assets/icones/logo zhd.png" alt="logo-zhd"></a>
-            <a href="menu.html"><img class="header__title" src="/src/assets/icones/menu-open.png" alt="menu-open"></a>
-        </header>
-    </div>
-    <h1 class="title"> Oeuvres majeures </h1>
-
-
-
-    <div class="work" x-data="{hrefCourant:'#ecran-1',}">
-        <button @click="parent = $refs.parent,parent.scrollLeft -= parent.clientWidth"
-            class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant">
-        </button><button @click="parent = $refs.parent,parent.scrollLeft += parent.clientWidth"
-            class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant">></button>
-        <div class="carrousel_parent-ecrans" x-ref="parent"
-            @scroll.debounce.250ms.passive="hrefCourant = '#'+[...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0).id">
-            <div id="ecran-1" class="carrousel_ecran">
-                <figure>
-                    <img src="/src/assets/img/iltun-huseynli-Vk5ub76oV4k-unsplash 1.png" , alt="Heydar alieyv Center">
-                    <figcaption>Heydar alieyv Center</figcaption>
-                </figure>
-            </div>
-            <div id="ecran-2" class="carrousel_ecran">
-                <figure>
-                    <img src="/src/assets/img/image 2.png" alt="Auditorium du Heydar Aliyev Center">
-                    <figcaption>Auditorium du Heydar Aliyev Center</figcaption>
-                </figure>
-            </div>
-            <div id="ecran-3" class="carrousel_ecran">
-                <figure>
-                    <img src="/src/assets/img/image 3.png" alt="image ecran 3">
-                    <figcaption>Université de Vienne d'Économie et de Gestion</figcaption>
-                    <p></p>
-                </figure>
-            </div>
-            <div id="ecran-4" class="carrousel_ecran">
-                <figure>
-                    <img src="/src/assets/img/zq-lee--O0kKUPxDAM-unsplash 1.png" alt="image ecran 4">
-                    <figcaption>Wangjing SOHO</figcaption>
-                </figure>
-            </div>
-            <div id="ecran-5" class="carrousel_ecran">
-                <figure>
-                    <img src="/src/assets/img/haley-truong-lXBMSUey8BI-unsplash 1.png" alt="image ecran 5">
-                    <figcaption>Dongdaemun Design Plaza</figcaption>
-                </figure>
-            </div>
-            <div id="ecran-6" class="carrousel_ecran">
-                <figure>
-                    <img src="/src/assets/img/image 4.png" alt="Jockey">
-                    <figcaption>Jockey Club Innovation Tower</figcaption>
-                </figure>
-            </div>
-            <div id="ecran-7" class="carrousel_ecran">
-                <figure>
-                    <img src="/src/assets/img/image 5.png" alt="Nanjing">
-                    <figcaption>Nanjing International Youth Cultural Centre</figcaption>
-                </figure>
-            </div>
-            <div id="ecran-8" class="carrousel_ecran">
-                <figure>
-                    <img src="/src/assets/img/image 6.png" alt="Port">
-                    <figcaption>Port Authority Building</figcaption>
-                </figure>
-            </div>
-            <div id="ecran-9" class="carrousel_ecran">
-                <figure>
-                    <img src="/src/assets/img/letian-zhang-m2qKhFb7fsY-unsplash 1.png" alt="Aéroport de Beijing Daxing">
-                    <figcaption>Aéroport de Beijing Daxing</figcaption>
-                </figure>
-            </div>
+    <body>
+        <div class="header">
+            <header class="active">
+                <a href="index.html"> <img class="logo-header" src="/src/assets/icones/logo zhd.png" alt="logo-zhd"></a>
+                <a href="menu.html"><img class="header__title" src="/src/assets/icones/menu-open.png"
+                        alt="menu-open"></a>
+            </header>
         </div>
-        <ul class="caroussel_liste-liens">
-            <li><a href="#ecran-1" :class="{actif:hrefCourant==='#ecran-1'}" class="caroussel_lien"></a></li>
-            <li><a href="#ecran-2" :class="{actif:hrefCourant==='#ecran-2'}" class="caroussel_lien"></a></li>
-            <li><a href="#ecran-3" :class="{actif:hrefCourant==='#ecran-3'}" class="caroussel_lien"></a></li>
-            <li><a href="#ecran-4" :class="{actif:hrefCourant==='#ecran-4'}" class="caroussel_lien"></a></li>
-            <li><a href="#ecran-5" :class="{actif:hrefCourant==='#ecran-5'}" class="caroussel_lien"></a></li>
-            <li><a href="#ecran-6" :class="{actif:hrefCourant==='#ecran-6'}" class="caroussel_lien"></a></li>
-            <li><a href="#ecran-7" :class="{actif:hrefCourant==='#ecran-7'}" class="caroussel_lien"></a></li>
-            <li><a href="#ecran-8" :class="{actif:hrefCourant==='#ecran-8'}" class="caroussel_lien"></a></li>
-            <li><a href="#ecran-9" :class="{actif:hrefCourant==='#ecran-9'}" class="caroussel_lien"></a></li>
+        <h1 class="title"> Oeuvres majeures </h1>
 
-        </ul>
-    </div>
-</body>
+
+
+        <div class="work" x-data="{hrefCourant:'#ecran-1',}">
+            <button @click="parent = $refs.parent,parent.scrollLeft -= parent.clientWidth"
+                class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant">
+            </button><button @click="parent = $refs.parent,parent.scrollLeft += parent.clientWidth"
+                class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant">></button>
+            <div class="carrousel_parent-ecrans" x-ref="parent"
+                @scroll.debounce.250ms.passive="hrefCourant = '#'+[...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0).id">
+                <div id="ecran-1" class="carrousel_ecran">
+                    <figure>
+                        <img src="/src/assets/img/iltun-huseynli-Vk5ub76oV4k-unsplash 1.png" ,
+                            alt="Heydar alieyv Center">
+                        <figcaption>Heydar alieyv Center</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-2" class="carrousel_ecran">
+                    <figure>
+                        <img src="/src/assets/img/image 2.png" alt="Auditorium du Heydar Aliyev Center">
+                        <figcaption>Auditorium du Heydar Aliyev Center</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-3" class="carrousel_ecran">
+                    <figure>
+                        <img src="/src/assets/img/image 3.png" alt="image ecran 3">
+                        <figcaption>Université de Vienne d'Économie et de Gestion</figcaption>
+                        <p></p>
+                    </figure>
+                </div>
+                <div id="ecran-4" class="carrousel_ecran">
+                    <figure>
+                        <img src="/src/assets/img/zq-lee--O0kKUPxDAM-unsplash 1.png" alt="image ecran 4">
+                        <figcaption>Wangjing SOHO</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-5" class="carrousel_ecran">
+                    <figure>
+                        <img src="/src/assets/img/haley-truong-lXBMSUey8BI-unsplash 1.png" alt="image ecran 5">
+                        <figcaption>Dongdaemun Design Plaza</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-6" class="carrousel_ecran">
+                    <figure>
+                        <img src="/src/assets/img/image 4.png" alt="Jockey">
+                        <figcaption>Jockey Club Innovation Tower</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-7" class="carrousel_ecran">
+                    <figure>
+                        <img src="/src/assets/img/image 5.png" alt="Nanjing">
+                        <figcaption>Nanjing International Youth Cultural Centre</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-8" class="carrousel_ecran">
+                    <figure>
+                        <img src="/src/assets/img/image 6.png" alt="Port">
+                        <figcaption>Port Authority Building</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-9" class="carrousel_ecran">
+                    <figure>
+                        <img src="/src/assets/img/letian-zhang-m2qKhFb7fsY-unsplash 1.png"
+                            alt="Aéroport de Beijing Daxing">
+                        <figcaption>Aéroport de Beijing Daxing</figcaption>
+                    </figure>
+                </div>
+            </div>
+            <ul class="caroussel_liste-liens">
+                <li><a href="#ecran-1" :class="{actif:hrefCourant==='#ecran-1'}" class="caroussel_lien"></a></li>
+                <li><a href="#ecran-2" :class="{actif:hrefCourant==='#ecran-2'}" class="caroussel_lien"></a></li>
+                <li><a href="#ecran-3" :class="{actif:hrefCourant==='#ecran-3'}" class="caroussel_lien"></a></li>
+                <li><a href="#ecran-4" :class="{actif:hrefCourant==='#ecran-4'}" class="caroussel_lien"></a></li>
+                <li><a href="#ecran-5" :class="{actif:hrefCourant==='#ecran-5'}" class="caroussel_lien"></a></li>
+                <li><a href="#ecran-6" :class="{actif:hrefCourant==='#ecran-6'}" class="caroussel_lien"></a></li>
+                <li><a href="#ecran-7" :class="{actif:hrefCourant==='#ecran-7'}" class="caroussel_lien"></a></li>
+                <li><a href="#ecran-8" :class="{actif:hrefCourant==='#ecran-8'}" class="caroussel_lien"></a></li>
+                <li><a href="#ecran-9" :class="{actif:hrefCourant==='#ecran-9'}" class="caroussel_lien"></a></li>
+
+            </ul>
+        </div>
+    </body>
+</div>
 
 </html>
