@@ -7,16 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zaha Hadid</title>
     <link rel="stylesheet" href="src/css/style.css">
-    <link rel="stylesheet" href="src/css/normalize.css">
-    <link rel="stylesheet" href="src/css/regle.css">
-    <link rel="icon" href="/src/assets/icones/icone zhd.png">
-    <script src="//unpkg.com/alpinejs" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
 </head>
 
-<body>
-    <img class="menu-close" src="/src/assets/icones/menu-closed.png" , alt="menu close">
-    <p class="Texte-menu-gris"> Billetterie </p>
-    <p class="Texte-menu"> Zaha Hadid </p>
-    <p class="Texte-menu"> Oeuvres majeures</p>
+<body x-data="{ isOpen: false }">
+    <button @click="isOpen = !isOpen">
+        <img class="menu-close" src="/src/assets/icones/menu-closed.png" alt="menu close">
+    </button>
+    <li><a href="#">Billetterie</a></li>
+    <li><a href="#">Zaha Hadid</a></li>
+    <li><a href="#">Oeuvres majeures</a></li>
+    <a href="index.html">
+        <img class="logo-header" src="/src/assets/icones/logo zhd.png" alt="logo-zhd">
+    </a>
 
-    <img class="logo-menu" src="/src/assets/icones/logo zhd.png" , alt="logo menu">
+    <script>
+        document.addEventListener('alpine:init', () => {
+            Alpine.data('menu', () => ({
+                isOpen: false,
+            }));
+        });
+    </script>
+</body>
+
+</html>
