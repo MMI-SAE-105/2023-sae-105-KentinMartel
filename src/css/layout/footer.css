@@ -1,41 +1,50 @@
-.footer {
-    width: 375px;
-    height: 485px;
-    background-color: beige;
-    padding: 20px;
+footer {
+    background-color: var(--gris-noir);
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin-top: 20px;
 }
 
-.logo-footer {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 20px;
-    background-image: url('/src/assets/icones/logo zhd.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.texte-footer {
-    font-family: Mulish, sans-serif;
-    font-size: 11px;
-    margin-bottom: 10px;
-}
-
-.texte-footer-bold {
-    font-weight: bold;
-}
-
-.social-icons {
+.footer__center {
     display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 10px;
-    margin-top: 10px;
 }
 
-.social-icons img {
+.footer__logo {
+
+    width: 50px;
+    margin-left: 135px;
+    margin-bottom: 1px;
+}
+
+
+
+.footer__billetterie {
+    margin-top: var(--space1x);
+    color: inherit;
+    color: var(--black);
+    font-size: var(--footer);
+    font-family: var(--readex);
+    margin-bottom: var(--space1x);
+}
+
+.footer__contact {
+    color: inherit;
+    color: var(--black);
+    font-size: var(--footer);
+    font-family: var(--readex);
+    margin-bottom: var(--space1x);
+}
+
+.icone-footer1 {
     width: 20px;
-    height: 20px;
+    margin-left: 120px;
+
+}
+
+.icone-footer2 {
+    width: 20px;
+    margin-left: 120px;
+
 }
