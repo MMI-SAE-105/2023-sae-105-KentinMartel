@@ -1,5 +1,54 @@
-.body {
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: var(--gris-noir);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.header__menuBtn {
+    position: relative;
+    z-index: 10;
+    background: transparent;
+    width: 50px;
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+    border: none;
+}
+
+.noscroll,
+.noscroll body {
+    overflow: hidden;
+}
+
+.menu__link {
+    text-decoration: none;
+    color: inherit;
+    color: var(--white);
+    font-size: var(--titre-partie-accueil);
+    font-family: var(--readex);
+}
+
+.menu__item {
+    list-style: none;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
-    float: left;
+    margin-right: 37px;
+
+}
+
+.back__menu {
+    position: relative;
+    z-index: 10;
+    background: transparent;
+    width: 20px;
+    border: none;
 }
