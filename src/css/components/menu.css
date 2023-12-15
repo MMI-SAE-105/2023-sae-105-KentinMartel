@@ -4,7 +4,7 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: var(--gris-noir);
+    background: var(--gray);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,11 +14,12 @@
 .header__menuBtn {
     position: relative;
     z-index: 10;
-    background: transparent;
+    background: var(--gris-noir);
     width: 50px;
     filter: invert(100%);
     -webkit-filter: invert(100%);
     border: none;
+    background: transparent;
 }
 
 .noscroll,
@@ -29,7 +30,7 @@
 .menu__link {
     text-decoration: none;
     color: inherit;
-    color: var(--white);
+    color: var(--black);
     font-size: var(--titre-partie-accueil);
     font-family: var(--readex);
 }
@@ -42,6 +43,7 @@
     justify-content: center;
     text-align: center;
     margin-right: 37px;
+    background: transparent;
 
 }
 

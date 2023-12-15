@@ -6,16 +6,19 @@ header {
     gap: 2rem;
     padding-top: 5px;
     padding-bottom: 5px;
+
 }
 
 .logo-header {
     width: 60px;
     padding-left: 10px;
+
 }
 
 .header__title {
     width: 43px;
     padding-right: 15px;
+    background: transparent;
 
 }
 
