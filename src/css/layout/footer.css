@@ -1,8 +1,8 @@
 footer {
-    background-color: var(--gris-noir);
+    background-color: var(--gray);
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
+    margin-top: 70px;
 }
 
 .footer__center {
@@ -12,39 +12,53 @@ footer {
 }
 
 .footer__logo {
-
-    width: 50px;
-    margin-left: 135px;
-    margin-bottom: 1px;
+    width: 70px;
+    margin-left: 160px;
+    margin-top: 40px;
 }
 
+
+.footer__copy {
+    font-size: var(--footer);
+    color: var(--black);
+    font-family: var(--readex);
+    opacity: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+}
 
 
 .footer__billetterie {
-    margin-top: var(--space1x);
-    color: inherit;
-    color: var(--black);
     font-size: var(--footer);
+    color: var(--black);
     font-family: var(--readex);
-    margin-bottom: var(--space1x);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    flex-direction: column;
 }
 
 .footer__contact {
-    color: inherit;
-    color: var(--black);
     font-size: var(--footer);
+    color: var(--black);
     font-family: var(--readex);
-    margin-bottom: var(--space1x);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    flex-direction: column;
 }
 
-.icone-footer1 {
-    width: 20px;
-    margin-left: 120px;
-
-}
-
-.icone-footer2 {
-    width: 20px;
-    margin-left: 120px;
-
+.footer__oeuvres {
+    font-size: var(--footer);
+    color: var(--black);
+    font-family: var(--readex);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    flex-direction: column;
 }

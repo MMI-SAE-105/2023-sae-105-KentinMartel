@@ -20,6 +20,19 @@
                 <a href="index.html"> <img class="logo-header" src="/src/assets/icones/logo zhd.png" alt="logo-zhd"></a>
                 <a href="menu.html"><img class="header__title" src="/src/assets/icones/menu-open.png"
                         alt="menu-open"></a>
+                <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
+                    <img class="back__menu" x-show="menuIsOpen" src="/src/assets/icones/menu-closed.png" alt="">
+                    <img class="menu__burger" x-show="!menuIsOpen" src="/src/assets/icones/menu-open.png" alt="">
+                </button>
+                <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.300ms class="menu">
+                    <ul menu__ul>
+                        <li class="menu__item"><a class='menu__link' href='/'>Accueil</a></li>
+                        <li class="menu__item"><a class='menu__link' href='architecte.html'>Zaha Hadid</a></li>
+                        <li class="menu__item"><a class='menu__link' href='/billetterie'>Billetterie</a></li>
+                        <li class="menu__item"><a class='menu__link' href='oeuvresmajeures.html'>Oeuvres majeures</a>
+                        </li>
+                    </ul>
+                </nav>
             </header>
         </div>
 
@@ -45,34 +58,31 @@
                 d'invalidité, Fondation Cartier Pass, Etudiants = Gratuit</p>
 
             <button class="billetterie">Billetterie</button>
-            <section>
-                <img class="image-oeuvre" src="/src/assets/img/denys-nevozhai-DEEJP2_U_x4-unsplash 1.png"
-                    alt="Batiment2">
-                <p class="legende">Heydar alieyv center</p>
-                <p class="texte-courant">Découvrez l'univers visionnaire de l'architecte renommée Zaha Hadid à travers
-                    une
-                    exposition captivante qui met en lumière son impact révolutionnaire sur le monde de l'architecture
-                    contemporaine.</p>
-                <li><a href="#">Plus d'informations</a></li>
-            </section>
+
+            <img class="image-oeuvre" src="/src/assets/img/denys-nevozhai-DEEJP2_U_x4-unsplash 1.png" alt="Batiment2">
+            <p class="legende">Heydar alieyv center</p>
+            <p class="texte-courant">Découvrez l'univers visionnaire de l'architecte renommée Zaha Hadid à travers
+                une
+                exposition captivante qui met en lumière son impact révolutionnaire sur le monde de l'architecture
+                contemporaine.</p>
+            <a href="architecte.html" class="informations">Plus d'informations</a>
+
 
         </main>
-</div>
-<div class="footer">
-    <footer>
-        <div class="footer__link">
-            <a class="footer__billetterie" href="/">Billetterie</a>
-            <a class="footer__contact" href="/">Contact</a>
-            <a class="footer__oeuvres" href="/">Oeuvres majeures</a>
+
+        <div class="footer">
+            <footer>
+                <div class="footer__centre">
+                    <a class='footer__billetterie' href='/billetterie'>Billetterie</a>
+                    <a class='footer__contact' href='formulaire.html'>Contact</a>
+                    <a class='footer__oeuvres' href='oeuvresmajeures.html'>Oeuvres Majeures</a>
+
+                    <img class="footer__logo" src="/src/assets/icones/logo zhd.png" alt="logo footer">
+                    <p class="footer__copy">&copy; 2023 Zaha Hadid</p>
+                </div>
+            </footer>
         </div>
-        <img class="footer__logo" src="/src/assets/icones/logo zhd.png" alt="Logo footer">
-
-        <p class="texte-footer">Nous suivre</p>
-        <img class="icone-footer1" src="/src/assets/icones/instagram.png" alt="Instagram logo">
-        <img class="icone-footer2" src="/src/assets/icones/twitter.png" alt="Twitter logo">
-
-    </footer>
+    </body>
 </div>
-</body>
 
 </html>
