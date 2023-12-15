@@ -39,6 +39,7 @@ footer {
     align-items: center;
     margin-top: 10px;
     flex-direction: column;
+    text-decoration: none;
 }
 
 .footer__contact {
@@ -50,6 +51,7 @@ footer {
     align-items: center;
     margin-top: 20px;
     flex-direction: column;
+    text-decoration: none;
 }
 
 .footer__oeuvres {
@@ -61,4 +63,5 @@ footer {
     align-items: center;
     margin-top: 25px;
     flex-direction: column;
+    text-decoration: none;
 }
