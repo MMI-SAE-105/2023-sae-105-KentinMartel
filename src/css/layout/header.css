@@ -19,6 +19,7 @@ header {
     width: 50px;
     padding-right: 15px;
     background: transparent;
+    border: none;
 
 }
 
@@ -27,4 +28,12 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.menu-burger {
+    position: relative;
+    z-index: 10;
+    background: transparent;
+    width: 20px;
+    border: none;
 }
