@@ -49,76 +49,93 @@
                     @scroll.debounce.250ms.passive="hrefCourant = '#'+[...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0).id">
                     <div id="ecran-1" class="carrousel_ecran">
                         <figure>
-                            <img src="/src/assets/img/iltun-huseynli-Vk5ub76oV4k-unsplash 1.png" ,
-                                alt="Heydar alieyv Center">
-                            <figcaption><a href="index.html">alieyv Center</figcaption></a>
+                            <div class="intro">
+                                <img class=image-oeuvre src="/src/assets/img/iltun-huseynli-Vk5ub76oV4k-unsplash 1.png"
+                                    , alt="Heydar alieyv Center">
+                                <figcaption><a href="index.html">alieyv Center</figcaption></a>
+
                         </figure>
                     </div>
                     <div id="ecran-2" class="carrousel_ecran">
                         <figure>
-                            <img src="/src/assets/img/image 2.png" alt="Auditorium du Heydar Aliyev Center">
+                            <img class=image-oeuvre src="/src/assets/img/image 2.png"
+                                alt="Auditorium du Heydar Aliyev Center">
                             <figcaption><a href="oeuvre1.html"> du Heydar Aliyev Center</figcaption></a>
                         </figure>
                     </div>
                     <div id="ecran-3" class="carrousel_ecran">
                         <figure>
-                            <img src="/src/assets/img/image 3.png" alt="image ecran 3">
+                            <img class=image-oeuvre src="/src/assets/img/image 3.png" alt="image ecran 3">
                             <figcaption><a href="oeuvre2.html"> de Vienne d'Économie et de Gestion</figcaption></a>
                             <p></p>
                         </figure>
                     </div>
                     <div id="ecran-4" class="carrousel_ecran">
                         <figure>
-                            <img src="/src/assets/img/zq-lee--O0kKUPxDAM-unsplash 1.png" alt="image ecran 4">
+                            <img class=image-oeuvre src="/src/assets/img/zq-lee--O0kKUPxDAM-unsplash 1.png"
+                                alt="image ecran 4">
                             <figcaption><a href="oeuvre3.html">Wangjing SOHO</figcaption></a>
                         </figure>
                     </div>
                     <div id="ecran-5" class="carrousel_ecran">
                         <figure>
-                            <img src="/src/assets/img/haley-truong-lXBMSUey8BI-unsplash 1.png" alt="image ecran 5">
+                            <img class=image-oeuvre src="/src/assets/img/haley-truong-lXBMSUey8BI-unsplash 1.png"
+                                alt="image ecran 5">
                             <figcaption><a href="oeuvre4.html">Dongdaemun Design Plaza</figcaption></a>
                         </figure>
                     </div>
                     <div id="ecran-6" class="carrousel_ecran">
                         <figure>
-                            <img src="/src/assets/img/image 4.png" alt="Jockey">
+                            <img class=image-oeuvre src="/src/assets/img/image 4.png" alt="Jockey">
                             <figcaption><a href="oeuvre5.html">Jockey Club Innovation Tower</figcaption></a>
                         </figure>
                     </div>
                     <div id="ecran-7" class="carrousel_ecran">
                         <figure>
-                            <img src="/src/assets/img/image 5.png" alt="Nanjing">
-                            <figcaption><a href="oeuvre6.html">Nanjing International Youth Cultural Centre</figcaption>
+                            <img class=image-oeuvre src="/src/assets/img/image 5.png" alt="Nanjing">
+                            <figcaption><a href="oeuvre6.html">Nanjing International Youth Cultural Centre
+                            </figcaption>
                             </a>
                         </figure>
                     </div>
                     <div id="ecran-8" class="carrousel_ecran">
                         <figure>
-                            <img src="/src/assets/img/image 6.png" alt="Port">
+                            <img class=image-oeuvre src="/src/assets/img/image 6.png" alt="Port">
                             <figcaption><a href="oeuvre7.html">Port Authority Building</figcaption></a>
                         </figure>
                     </div>
                     <div id="ecran-9" class="carrousel_ecran">
                         <figure>
-                            <img src="/src/assets/img/letian-zhang-m2qKhFb7fsY-unsplash 1.png"
+                            <img class=image-oeuvre src="/src/assets/img/letian-zhang-m2qKhFb7fsY-unsplash 1.png"
                                 alt="Aéroport de Beijing Daxing">
                             <figcaption><a href="oeuvre8.html">Aéroport de Beijing Daxing</figcaption></a>
                         </figure>
                     </div>
                 </div>
-                <ul class="caroussel_liste-liens">
-                    <li><a href="#ecran-1" :class="{actif:hrefCourant==='#ecran-1'}" class="caroussel_lien"></a></li>
-                    <li><a href="#ecran-2" :class="{actif:hrefCourant==='#ecran-2'}" class="caroussel_lien"></a></li>
-                    <li><a href="#ecran-3" :class="{actif:hrefCourant==='#ecran-3'}" class="caroussel_lien"></a></li>
-                    <li><a href="#ecran-4" :class="{actif:hrefCourant==='#ecran-4'}" class="caroussel_lien"></a></li>
-                    <li><a href="#ecran-5" :class="{actif:hrefCourant==='#ecran-5'}" class="caroussel_lien"></a></li>
-                    <li><a href="#ecran-6" :class="{actif:hrefCourant==='#ecran-6'}" class="caroussel_lien"></a></li>
-                    <li><a href="#ecran-7" :class="{actif:hrefCourant==='#ecran-7'}" class="caroussel_lien"></a></li>
-                    <li><a href="#ecran-8" :class="{actif:hrefCourant==='#ecran-8'}" class="caroussel_lien"></a></li>
-                    <li><a href="#ecran-9" :class="{actif:hrefCourant==='#ecran-9'}" class="caroussel_lien"></a></li>
-
-                </ul>
             </div>
+            <ul class="caroussel_liste-liens">
+                <li><a href="#ecran-1" :class="{actif:hrefCourant==='#ecran-1'}" class="caroussel_lien"></a>
+                </li>
+                <li><a href="#ecran-2" :class="{actif:hrefCourant==='#ecran-2'}" class="caroussel_lien"></a>
+                </li>
+                <li><a href="#ecran-3" :class="{actif:hrefCourant==='#ecran-3'}" class="caroussel_lien"></a>
+                </li>
+                <li><a href="#ecran-4" :class="{actif:hrefCourant==='#ecran-4'}" class="caroussel_lien"></a>
+                </li>
+                <li><a href="#ecran-5" :class="{actif:hrefCourant==='#ecran-5'}" class="caroussel_lien"></a>
+                </li>
+                <li><a href="#ecran-6" :class="{actif:hrefCourant==='#ecran-6'}" class="caroussel_lien"></a>
+                </li>
+                <li><a href="#ecran-7" :class="{actif:hrefCourant==='#ecran-7'}" class="caroussel_lien"></a>
+                </li>
+                <li><a href="#ecran-8" :class="{actif:hrefCourant==='#ecran-8'}" class="caroussel_lien"></a>
+                </li>
+                <li><a href="#ecran-9" :class="{actif:hrefCourant==='#ecran-9'}" class="caroussel_lien"></a>
+                </li>
+
+            </ul>
+        </div>
+
     </body>
     <div class="footer">
         <footer>
