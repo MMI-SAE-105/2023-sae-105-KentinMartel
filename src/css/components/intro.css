@@ -52,6 +52,7 @@
     color: var(--black);
     margin-left: var(--space2x);
     margin-right: var(--space2x);
+    line-height: 150%;
 }
 
 .img-oeuvre {
