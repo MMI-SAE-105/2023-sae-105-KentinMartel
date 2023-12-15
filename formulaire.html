@@ -35,43 +35,45 @@
         <h1 class="title"> N’hésitez pas
             à nous contacter</h1>
 
-        <form action="/ma-page-de-traitement" method="post">
-            <ul>
-                <li>
-                    <label for="name">Prénom&nbsp;:</label>
-                    <input type="text" id="name" name="user_name" />
-                </li>
-                <li>
-                    <label for="name">Nom&nbsp;:</label>
-                    <input type="text" id="name" name="user_name" />
-                </li>
-                <li>
-                    <label for="mail">E-mail&nbsp;:</label>
-                    <input type="email" id="mail" name="user_mail" />
-                </li>
-                <li>
-                    <label for="mail">Objet&nbsp;:</label>
-                    <input type="text" id="objet" name="subject" />
-                </li>
-                <li>
-                    <label for="msg">Message&nbsp;:</label>
-                    <textarea id="msg" name="user_message"></textarea>
-                </li>
-            </ul>
-        </form>
-</div>
-<div class="footer">
-    <footer>
-        <div class="footer__centre">
-            <a class='footer__billetterie' href='/billetterie'>Billetterie</a>
-            <a class='footer__contact' href='formulaire.html'>Contact</a>
-            <a class='footer__oeuvres' href='oeuvresmajeures.html'>Oeuvres Majeures</a>
+        <main>
+            <section class="contact">
+                <div>
+                    <label class="label__name" for="Prénom">Prénom</label>
+                    <input type="text" name="first-name" id="first-name" />
+                </div>
+                <div>
+                    <label class="label__name" for="Nom">Nom</label>
+                    <input type="text" name="last-name" id="last-name" />
+                </div>
+                <div>
+                    <label class="label__name" for="E-mail">E-mail</label>
+                    <input type="text" name="last-name" id="last-name" />
+                </div>
+                <div>
+                    <label class="label__name" for="Objet">Objet</label>
+                    <input type="text" name="last-name" id="last-name" />
+                </div>
+                <div>
+                    <label class="label__message" for="message">Message</label>
+                    <textarea id="message" name="message" rows="5"></textarea>
+                </div>
+                <button class="contact_btn">ENVOYER</button>
+                </form>
+            </section>
+        </main>
 
-            <img class="footer__logo" src="/src/assets/icones/logo zhd.png" alt="logo footer">
-            <p class="footer__copy">&copy; 2023 Zaha Hadid</p>
+        <div class="footer">
+            <footer>
+                <div class="footer__centre">
+                    <a class='footer__billetterie' href='/billetterie'>Billetterie</a>
+                    <a class='footer__contact' href='formulaire.html'>Contact</a>
+                    <a class='footer__oeuvres' href='oeuvresmajeures.html'>Oeuvres Majeures</a>
+
+                    <img class="footer__logo" src="/src/assets/icones/logo zhd.png" alt="logo footer">
+                    <p class="footer__copy">&copy; 2023 Zaha Hadid</p>
+                </div>
+            </footer>
         </div>
-    </footer>
-</div>
-</body>
+    </body>
 
 </html>

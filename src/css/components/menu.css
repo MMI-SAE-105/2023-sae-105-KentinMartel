@@ -11,13 +11,10 @@
     align-items: center;
 }
 
-.header__menuBtn {
+.menu__burger {
     position: relative;
     z-index: 10;
-    background: var(--gris-noir);
     width: 50px;
-    filter: invert(100%);
-    -webkit-filter: invert(100%);
     border: none;
     background: transparent;
 }
