@@ -1,6 +1,6 @@
-.page__title {
+.title {
     font-size: var(--title);
-    font-family: var(--readex);
+    font-family: var(--niramit);
     font-weight: 500;
     color: var(--gris-noir);
     text-align: center;
@@ -34,7 +34,7 @@
     font-weight: 400;
 }
 
-.title__partie {
+.titregrand {
     font-size: var(--titre-partie-accueil);
     font-family: var(--readex);
     color: var(--black);
@@ -42,7 +42,7 @@
     padding-right: var(--space2x);
 }
 
-.body {
+.texte-courant {
     font-family: var(--niramit);
     font-size: var(--body);
     color: var(--black);
@@ -56,16 +56,10 @@
     width: 85%;
 }
 
-.text__tarifs {
-    font-family: var(--niramit);
-    font-size: var(--body);
-    color: var(--black);
-    margin-left: var(--space2x);
-    margin-right: var(--space2x);
-}
 
-.gratuit_pour {
-    font-family: var(--niramit);
+
+.texte-gras {
+    font-family: var(--readex);
     font-size: var(--body);
     font-weight: bold;
     color: var(--black);
@@ -74,25 +68,21 @@
 }
 
 .btn__billetterie {
-    background-color: var(--black);
-    color: var(--white);
-    border-radius: 20px;
-    padding: 10px 20px;
+    background-color: var(--gray);
+    color: var(--black);
+    border: 2px solid black;
+    border-radius: 0;
+    font-family: var(--niramit);
+    padding: 10px;
     width: 150px;
-    border: none;
     display: flex;
     align-items: center;
-    margin-left: 25%;
-    margin-bottom: 20px;
+    margin-left: 32%;
+    margin-bottom: 30px;
+    margin-top: 25px;
 }
 
-.logo__btnbilletterie {
-    width: 20%;
-    margin-right: 10px;
-    filter: invert(100%);
-    -webkit-filter: invert(100%);
-    transform: rotate(180deg);
-}
+
 
 .lien_bottomhome {
     color: inherit;
